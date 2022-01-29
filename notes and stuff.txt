@@ -1,0 +1,65 @@
+Well, hello there! Looks like somebody has made it to the files. This is just a text file where I keep notes on what to do, any ideas and what I already finished. Might not make sense to you.
+
+Patch notes:
+	
+Districts and buildings
+	- districts have been tweaked 
+	- the modular district system has become kinda pointless, so it has been removed. All Districts are now available from the start, with the fifth depending on the country.
+	- districts now give enough housing to accomedate all the jobs they provide, since there are less buildingslots now. There is still no city district equivialent however. Housing stations now provide a singular buildingslot each.
+	- district upkeep has been tweaked to cost the same as their planet equivialent + 1 minerals
+	- the new district set is: 
+		1. Solar Station - energy - 2 housing, 2 electrician - upkeep 1 energy 1 mineral
+		2. Mining/Starscooping Station - minerals - 2 housing, 2 miner (starscooping increseas miner minerals by one and unlocks district cap)- upkeep 1 energy 1 mineral
+		3. Zero G Lab - science - 2 housing, 2 scientists - upkeep 3 energy 1 mineral 
+		4. Industry - alloy + civ - same as planet industrial - upkeep 2 energy 1 mineral
+		5. Market station(normal empire) - trade - 3 housing, 3 clerk - upkeep 3 energy 1 mineral
+			or sanctuary station (rogue servitor) - biotrophy - 1 housing, 6 biotrophy, 1 atrisan drone - upkeep 2 energy 1 minerals
+			or spawning chamber(hive) - popgrowth + food - 3 housing, 1 spawning drone (3 unity, +4% pop growth, 2 ameneties, upkeep of 2 food), 2 0G farmer drone - upkeep 3 energy 1 food
+			or Server Farms(ME) - admin cap  - 3 housing 3 coordinator - upkeep 3 energy 1 mineral
+		(gestalt housing district and calculator job have been removed)
+	- alloy/consumer goods buildings have beeen removed. now uses vanilla building for extra jobs. You will need to build housing stations to provide hoiusing for the additional jobs.
+	- In addition to upgrading your capital, buildingslots are now unlocked by building housing stations, unlike in vanilla where its done through city districts 
+	- all special dyson buildings provide enough housing for their jobs now.
+
+- alloy cost for starscooping and mine planet descision been reduced
+- "Lost home" origin is now available as a civic to mix it with other origins. May cause bugs with modded origins. The origin-civic submod is no longer supported.
+- removed the gravity adaptation trait. A small number of pops on dyson swarms now get the void dweller trait instead at random every couple years.
+- gravity generators now cost 1000 minerals and 100 alloys instead af 2000 and 200
+- the rogue colonizing unit origin has been improved using the set_origin effect, which was not a thing when I originally made it. The origin civics submod will no longer work with it because of this.
+- AI should no longer build more than 4 dyson swarms over the course of a game (unless they have an origin realated to it)
+
+ideas for next update:
+- origin for lithoids: they live as space dwelling creatures, with asteroid houses built around a star. can eat planets from the start of the game, but that is the only way they can increase their size.
+- add an event that replaces ALL planetary buildings built by AIs on swarms with the swarm versions.
+- new origin: void dwellers + lost home
+- new tech: Advanced Supermassive Logistics, which allows empires to mine planets from any system and add their size to a random dyson swarm in their empire. This does however require a starbase with a special building. 
+- dyson swarm primitives
+
+-alternate dyson swarm building:
+	-a slow process that requires some sort of outpost/source for materials
+	-decide what districts/buffs the swarm will have over the course of the building (solarpanels or no upkeep, trade or science, etc)
+	-random events about complications, etc.
+	-centralization mechanic: How self-sufficent are the habitats? Maybe some sort of buff+debuff for higher/lower centralization. Free jobs for higher revolt chance/less income?
+	
+	-solar panels district or free upkeep (+egalitarian ethics?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
