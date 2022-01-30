@@ -1081,10 +1081,7 @@ planet_event = {
 	
 	immediate = {
 		solar_system = {
-			random_system_planet = {
-				limit = {
-					is_star = yes
-				}
+			star = {
 				save_event_target_as = dyson_spawnpoint
 			}
 			spawn_planet = {

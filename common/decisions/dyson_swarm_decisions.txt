@@ -110,7 +110,7 @@ decision_uninhabitet_dyson_swarm_destroy = {
 	potential = {
 		AND = {
 			exists = space_owner
-			space_owner = { is_same_value = from }
+			is_owned_by = from
 			is_planet_class = pc_dyson_swarm
 			num_pops = 0
 		}
@@ -435,9 +435,7 @@ decision_upgrade_ap_home_in_the_sky = {
 		is_planet_class = pc_dyson_swarm
 		custom_tooltip = {
 			fail_text = "not_more_than_five_you_madman"
-			NOT = {
-				check_variable = { which = number_of_dyson_swarm_upgrades value = 6 }
-			}
+			check_variable = { which = number_of_dyson_swarm_upgrades value != 6 }
 		}
 	}
 	
@@ -557,7 +555,7 @@ decision_dyson_consume_planet = {
 	
 	potential = {
 		exists = space_owner
-		space_owner = { is_same_value = from }
+		is_owned_by = from
 		from = {
 			OR = {
 				has_ascension_perk = ap_home_in_the_sky
@@ -587,7 +585,7 @@ decision_dyson_consume_planet = {
 	allow = {
 		custom_tooltip = {
 			fail_text = "requires_no_anomaly"
-			NOT = { has_anomaly = yes }
+			has_anomaly = no
 		}
 		custom_tooltip = {
 			fail_text = "there_are_people_there_you_evil_person"
@@ -660,7 +658,7 @@ decision_dyson_consume_asteroid = {
 	
 	potential = {
 		exists = space_owner
-		space_owner = { is_same_value = from }
+		is_owned_by = from
 		FROM = {
 			OR = {
 				has_ascension_perk = ap_home_in_the_sky
@@ -681,7 +679,7 @@ decision_dyson_consume_asteroid = {
 	allow = {
 		custom_tooltip = {
 			fail_text = "requires_no_anomaly"
-			NOT = { has_anomaly = yes }
+			has_anomaly = no
 		}
 		custom_tooltip = {
 			fail_text = "there_are_people_there_you_evil_person"
@@ -745,7 +743,7 @@ decision_mined_planet_destroy = {
 	potential = {
 		AND = {
 			exists = space_owner
-			space_owner = { is_same_value = from }
+			is_owned_by = from
 			has_planet_flag = dyson_mined_out
 		}
 	}

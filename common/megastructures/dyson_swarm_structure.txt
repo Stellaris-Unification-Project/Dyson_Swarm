@@ -63,7 +63,7 @@ dyson_swarm_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "no_dyson_sphere_no_ringworld"
@@ -137,7 +137,7 @@ dyson_swarm_0 = {
 			solar_system = {
 				any_system_planet = { 
 					exists = owner
-					owner = { is_same_value = from }
+					is_owned_by = from
 				}
 			}
 		}
@@ -315,7 +315,7 @@ dyson_swarm_cheaper_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			custom_tooltip = {
 				fail_text = "no_dyson_sphere_no_ringworld"
@@ -390,7 +390,7 @@ dyson_swarm_cheaper_0 = {
 			solar_system = {
 				any_system_planet = { 
 					exists = owner
-					owner = { is_same_value = from }
+					is_owned_by = from
 				}
 			}
 		}
